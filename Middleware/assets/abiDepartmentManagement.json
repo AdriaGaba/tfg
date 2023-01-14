@@ -1,0 +1,225 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_d",
+        "type": "string"
+      }
+    ],
+    "name": "exists",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "d",
+        "type": "string"
+      }
+    ],
+    "name": "incrementProjNumber",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "setAddressProjectContract",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "d",
+        "type": "string"
+      }
+    ],
+    "name": "projectNum",
+    "outputs": [
+      {
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_d",
+        "type": "string"
+      },
+      {
+        "name": "_des",
+        "type": "string"
+      },
+      {
+        "name": "_ofi",
+        "type": "string"
+      }
+    ],
+    "name": "create",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "d",
+        "type": "string"
+      }
+    ],
+    "name": "decrementProjNumber",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_d",
+        "type": "string"
+      }
+    ],
+    "name": "close",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "pg",
+        "type": "string"
+      },
+      {
+        "name": "d",
+        "type": "string"
+      }
+    ],
+    "name": "belongsDPT",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_d",
+        "type": "string"
+      },
+      {
+        "name": "_pg",
+        "type": "string"
+      }
+    ],
+    "name": "assign",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "NomDPT",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "DescripcioDPT",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "OficinaDPT",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "requestor",
+        "type": "address"
+      }
+    ],
+    "name": "Create_dpt",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "NomDPT",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "Programador",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "requestor",
+        "type": "address"
+      }
+    ],
+    "name": "Assign_dpt",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "NomDPT",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "requestor",
+        "type": "address"
+      }
+    ],
+    "name": "Close_dpt",
+    "type": "event"
+  }
+]
